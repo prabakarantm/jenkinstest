@@ -4,7 +4,8 @@ pipeline {
         stage('build') {
             steps {
                 //sh "./script.sh"
-               sh "echo pwd()"
+               def workspace = pwd()
+               echo "worksp " + ${workspace}
             }
         }
     }
