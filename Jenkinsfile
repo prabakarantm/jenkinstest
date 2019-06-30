@@ -4,7 +4,7 @@ pipeline {
         stage('build') {
             steps {
                 //sh "./script.sh"
-               sh "echo $(pwd)"
+               sh "echo pwd()"
             }
         }
     }
