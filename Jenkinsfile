@@ -4,7 +4,7 @@ pipeline {
         stage('build') {
             steps {
                 //sh "./script.sh"
-               echo ${env.WORKSPACE}
+               echo "${env.WORKSPACE}"
             }
         }
     }
